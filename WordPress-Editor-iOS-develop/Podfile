@@ -1,0 +1,7 @@
+platform :ios, ‘8.0‘
+use_frameworks!
+
+target "WordPress-Editor-iOS-develop" do
+pod "WordPress-Editor-iOS-Extension", ‘0.1.3‘
+pod "AFNetworking"
+end
