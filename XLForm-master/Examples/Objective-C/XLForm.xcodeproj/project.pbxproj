@@ -43,8 +43,7 @@
 		5BB6B032D80344C9E7D956CD /* libPods-XLForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19383D268EF8024CB33FCCA4 /* libPods-XLForm.a */; };
 		66B6266E1AE0055100007886 /* DateAndTimeValueTrasformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B6266D1AE0055100007886 /* DateAndTimeValueTrasformer.m */; };
 		BA98EAA71D29417C00EF8EFB /* YTSSCustomTABView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98EAA61D29417C00EF8EFB /* YTSSCustomTABView.m */; };
-		BA98EAAA1D2941E900EF8EFB /* YTSSDiscountTABCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98EAA91D2941E900EF8EFB /* YTSSDiscountTABCell.m */; };
-		BA98EAAD1D294E2B00EF8EFB /* YTSSTABCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98EAAC1D294E2B00EF8EFB /* YTSSTABCell.m */; };
+		BA98EAB01D2C0BD500EF8EFB /* YTSSTABCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA98EAAF1D2C0BD500EF8EFB /* YTSSTABCell.m */; };
 		BF01E9281C21F0BB00BDE045 /* XLFormInlineSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01E9271C21F0BB00BDE045 /* XLFormInlineSegmentedCell.m */; };
 		BF9DB1D51AE0436600B985E7 /* BlogExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9DB1D21AE0436600B985E7 /* BlogExampleViewController.m */; };
 		BF9DB1D61AE0436600B985E7 /* PredicateFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9DB1D41AE0436600B985E7 /* PredicateFormViewController.m */; };
@@ -122,10 +121,8 @@
 		B98C1213E7C714A861219C81 /* Pods-XLForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLForm/Pods-XLForm.release.xcconfig"; sourceTree = "<group>"; };
 		BA98EAA51D29417C00EF8EFB /* YTSSCustomTABView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSSCustomTABView.h; sourceTree = "<group>"; };
 		BA98EAA61D29417C00EF8EFB /* YTSSCustomTABView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSSCustomTABView.m; sourceTree = "<group>"; };
-		BA98EAA81D2941E900EF8EFB /* YTSSDiscountTABCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSSDiscountTABCell.h; sourceTree = "<group>"; };
-		BA98EAA91D2941E900EF8EFB /* YTSSDiscountTABCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSSDiscountTABCell.m; sourceTree = "<group>"; };
-		BA98EAAB1D294E2B00EF8EFB /* YTSSTABCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTSSTABCell.h; path = Examples/CustomRows/FloatLabeledTextField/YTSSTABCell.h; sourceTree = "<group>"; };
-		BA98EAAC1D294E2B00EF8EFB /* YTSSTABCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTSSTABCell.m; path = Examples/CustomRows/FloatLabeledTextField/YTSSTABCell.m; sourceTree = "<group>"; };
+		BA98EAAE1D2C0BD500EF8EFB /* YTSSTABCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSSTABCell.h; sourceTree = "<group>"; };
+		BA98EAAF1D2C0BD500EF8EFB /* YTSSTABCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSSTABCell.m; sourceTree = "<group>"; };
 		BF01E9261C21F0BB00BDE045 /* XLFormInlineSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLFormInlineSegmentedCell.h; path = "Inline Segmented/XLFormInlineSegmentedCell.h"; sourceTree = "<group>"; };
 		BF01E9271C21F0BB00BDE045 /* XLFormInlineSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLFormInlineSegmentedCell.m; path = "Inline Segmented/XLFormInlineSegmentedCell.m"; sourceTree = "<group>"; };
 		BF9DB1D11AE0436600B985E7 /* BlogExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlogExampleViewController.h; path = Examples/PredicateExamples/BlogExampleViewController.h; sourceTree = SOURCE_ROOT; };
@@ -416,8 +413,6 @@
 			children = (
 				3C3B01EE1AB74BDC0027CD45 /* FloatLabeledTextFieldCell.h */,
 				3C3B01EF1AB74BDC0027CD45 /* FloatLabeledTextFieldCell.m */,
-				BA98EAAB1D294E2B00EF8EFB /* YTSSTABCell.h */,
-				BA98EAAC1D294E2B00EF8EFB /* YTSSTABCell.m */,
 			);
 			name = FloatLabeledTextField;
 			sourceTree = "<group>";
@@ -450,8 +445,8 @@
 			children = (
 				BA98EAA51D29417C00EF8EFB /* YTSSCustomTABView.h */,
 				BA98EAA61D29417C00EF8EFB /* YTSSCustomTABView.m */,
-				BA98EAA81D2941E900EF8EFB /* YTSSDiscountTABCell.h */,
-				BA98EAA91D2941E900EF8EFB /* YTSSDiscountTABCell.m */,
+				BA98EAAE1D2C0BD500EF8EFB /* YTSSTABCell.h */,
+				BA98EAAF1D2C0BD500EF8EFB /* YTSSTABCell.m */,
 			);
 			name = CustomerTAB;
 			path = Examples/CustomRows/CustomerTAB;
@@ -623,6 +618,7 @@
 				3CDAFC7A1AB0AFA4000F75B6 /* CustomRowsViewController.m in Sources */,
 				DEA6EF911B57D6CC000F4893 /* HTTPSessionManager.m in Sources */,
 				282EB27C1AB5FF33004A736F /* AccessoryViewFormViewController.m in Sources */,
+				BA98EAB01D2C0BD500EF8EFB /* YTSSTABCell.m in Sources */,
 				BF9DB1D51AE0436600B985E7 /* BlogExampleViewController.m in Sources */,
 				2850C60818D0F706002B7D0A /* main.m in Sources */,
 				D51B8B2C19126664008C0478 /* XLFormCustomCell.m in Sources */,
@@ -632,7 +628,6 @@
 				28468E9818EC686500DBB015 /* NativeEventFormViewController.m in Sources */,
 				3C3B01DA1AB7497D0027CD45 /* XLFormWeekDaysCell.m in Sources */,
 				28F89F2E1AA4EA5600E90218 /* ValidationExamplesFormViewController.m in Sources */,
-				BA98EAAD1D294E2B00EF8EFB /* YTSSTABCell.m in Sources */,
 				BA98EAA71D29417C00EF8EFB /* YTSSCustomTABView.m in Sources */,
 				66B6266E1AE0055100007886 /* DateAndTimeValueTrasformer.m in Sources */,
 				3C3B01D51AB741EF0027CD45 /* XLFormRatingCell.m in Sources */,
@@ -648,7 +643,6 @@
 				BFE91AFB1AE159B200DE5231 /* BasicPredicateViewController.m in Sources */,
 				DEB8235C1AD5529A00AF9FE2 /* FormattersViewController.m in Sources */,
 				2843EB5218D4CFC700F13E2B /* OthersFormViewController.m in Sources */,
-				BA98EAAA1D2941E900EF8EFB /* YTSSDiscountTABCell.m in Sources */,
 				2843EB4B18D496F600F13E2B /* SelectorsFormViewController.m in Sources */,
 				28468EA418EF41D300DBB015 /* InputsFormViewController.m in Sources */,
 				28A76625193251E500D69546 /* AppDelegate.m in Sources */,
