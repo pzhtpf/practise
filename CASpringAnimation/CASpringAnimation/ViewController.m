@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+@property(nonatomic) BOOL isReverses;
 
 @end
 
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _isReverses = false;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,11 +30,11 @@
 
 -(void)addCASpringAnimation{
 
-    id springAnimation = [self.testLabel.layer animationForKey:@"springAnimation"];
+    CASpringAnimation *springAnimation = (CASpringAnimation *)[self.testLabel.layer animationForKey:@"springAnimation"];
     
     if(!springAnimation){
     
-        CASpringAnimation *springAnimation = [CASpringAnimation animationWithKeyPath:@"position.y"];
+        springAnimation = [CASpringAnimation animationWithKeyPath:@"position.y"];
         
         springAnimation.damping = 15;
         springAnimation.stiffness = 300;
@@ -41,11 +44,14 @@
         springAnimation.toValue = @(self.testLabel.layer.position.y - 50);
         springAnimation.duration = springAnimation.settlingDuration;
         springAnimation.autoreverses = NO;
-//        springAnimation.isRemovedOnCompletion = @NO;
+        springAnimation.removedOnCompletion = NO;
+        springAnimation.fillMode = @"forwards";
         
-        [self.testLabel.layer addAnimation:springAnimation forKey:@"springAnimation"];
+        
+        
     }
 
+     [self.testLabel.layer addAnimation:springAnimation forKey:@"springAnimation"];
 }
 
 - (IBAction)buttonAction:(id)sender {
